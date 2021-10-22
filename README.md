@@ -16,7 +16,7 @@ pip install tqdm
 ```
 4. [GloVe embedded vector](https://nlp.stanford.edu/projects/glove/) 
 - Download the glove6B.zip file from the link above 
-- Extarct the *glove.6B.100d.txt* to be used for the code in 3.4 Application
+- Extract the *glove.6B.100d.txt* to be used for the code in 3.4 Application
 
 
 ### Results 
