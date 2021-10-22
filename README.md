@@ -14,3 +14,19 @@ from nltk.sentiment.vader import SentimentIntensityAnalyzer
 ```
 pip install tqdm
 ```
+
+
+### Results 
+#### 3.4 Application 
+
+**Input text: "I ordered this chair last week. The condition was really good. The support is comfortable for the back and the seat is strong"**
+
+LIME output:
+![Positive Prediction](pos_pred.png)
+
+**Input text: "Never again! The service was so slow and the food was not good."**
+
+LIME output:
+![Negative Prediction](neg_pred.png)
+
+Using the LIME tool we are able to identify the probability of contribution to a specific label for every token in the text. From the 2 sample predictions above we can see that the model is more confident in making positive predictions as the dataset is biased towards positive reviews. Although words like 'Never' or 'Not' are used one positive word 'good' contributes highly towards the final prediction of the negative review. 
