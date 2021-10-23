@@ -33,3 +33,24 @@ LIME output:
 ![Negative Prediction](neg_pred.png)
 
 Using the LIME tool we are able to identify the probability of contribution to a specific label for every token in the text. From the 2 sample predictions above we can see that the model is more confident in making positive predictions as the dataset is biased towards positive reviews. Although words like 'Never' or 'Not' are used one positive word 'good' contributes highly towards the final prediction of the negative review. 
+
+
+### libraries required to run POS tagging
+1. [Natural Language Toolkit](https://www.nltk.org/install.html)
+- NLTK is a suite of libraries and programs for symbolic and statistical natural language processing. It is used as one of the two toolkits for pos tagging.
+```
+pip install nltk
+```
+
+2. [spaCy](https://spacy.io/usage)
+- spaCy is an open-source software library for advanced natural language processing. It is used as one of the two toolkits for pos tagging.
+```
+pip install spacy
+python -m spacy download en_core_web_sm
+```
+
+2. [pandas](https://pandas.pydata.org/docs/getting_started/install.html)
+- pandas is a Python package that provides fast, flexible, and expressive data structures, used in this assignment to display the results obtained.
+```
+pip install pandas
+```
