@@ -13,7 +13,7 @@ For `2. Extraction of indicative adjective phrase.ipynb`, a stanford core server
 ### Stanford Core server
 #### To download and install stanford core nlp
 1. Please visit https://stanfordnlp.github.io/CoreNLP/download.html to download stanford core nlp and unzip the downloaded file
-2. Download and install Java
+2. Download and install Java <br/>
 For windows: https://www.java.com/en/download/help/windows_manual_download.html <br/>
 For macs: https://www.java.com/en/download/help/mac_install.html <br/>
 For linux: https://java.com/en/download/help/linux_x64_install.html <br/>
