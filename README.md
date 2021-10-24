@@ -1,83 +1,47 @@
-### CZ4045 Natural Language Processing
-## Assignment 1
+# CZ4045 Natural Language Processing - Assignment 1
+## Files
+Files are labelled according to the portion in the Report.
 
-### List of 3rd-party open source packages
-1. [LIME](https://github.com/marcotcr/lime)
-- LIME is an Explainable AI open source package used to explain reasonings behind model predictions. 
-2. VADER
-```
-nltk.download('vader_lexicon')
-from nltk.sentiment.vader import SentimentIntensityAnalyzer
-```
-3. [tqdm](https://pypi.org/project/tqdm/)
-- tqdm is used to track progress of loading GloVe vectors in the application portion of the assignment
-```
-pip install tqdm
-```
-4. [GloVe embedded vector](https://nlp.stanford.edu/projects/glove/) 
-- Download the glove6B.zip file from the link above 
-- Extract the *glove.6B.100d.txt* to be used for the code in 3.4 Application
+## Installation manual
 
-### libraries required to run POS tagging
-1. [Natural Language Toolkit](https://www.nltk.org/install.html)
-- NLTK is a suite of libraries and programs for symbolic and statistical natural language processing. It is used as one of the two toolkits for pos tagging.
-```
-pip install nltk
-```
+All python libraries need for the individual sections will be installed in the respective .ipynb file. <br/>
 
-2. [spaCy](https://spacy.io/usage)
-- spaCy is an open-source software library for advanced natural language processing. It is used as one of the two toolkits for pos tagging.
-```
-pip install spacy
-python -m spacy download en_core_web_sm
-```
+For 1.2, 1.3, 1.4, 1.5, 3 - only python libraries are needed. <br/>
 
-3. [pandas](https://pandas.pydata.org/docs/getting_started/install.html)
-- pandas is a Python package that provides fast, flexible, and expressive data structures, used in this assignment to display the results obtained.
-```
-pip install pandas
-```
+For `2. Extraction of indicative adjective phrase.ipynb`, a stanford core server is required to run in the background.
 
-### libraries and documents required to run Writing Style Analysis
-1. [Natural Language Toolkit](https://www.nltk.org/install.html)
-- NLTK is a suite of libraries and programs for symbolic and statistical natural language processing. 
-```
-pip install nltk
-```
+### Stanford Core server
+#### To download and install stanford core nlp
+1. Please visit https://stanfordnlp.github.io/CoreNLP/download.html to download stanford core nlp and unzip the downloaded file
+2. Download and install Java
+For windows: https://www.java.com/en/download/help/windows_manual_download.html <br/>
+For macs: https://www.java.com/en/download/help/mac_install.html <br/>
+For linux: https://java.com/en/download/help/linux_x64_install.html <br/>
 
-2. [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#installing-beautiful-soup)
-- Beautiful Soup is a Python library for pulling data out of HTML and XML files. It is used to web scrape the posts from the various URLs.
+#### To run background server
+1. open a terminal at the directory of stanfore core nlp file
+2. run the following command in terminal
+``` bash
+java -mx4g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -preload tokenize,ssplit,pos,lemma,ner,parse,depparse -status_port 9000 -port 9000 -timeout 100000000000000000000000 &
 ```
-pip install beautifulsoup4
-```
+With this, the server should be started and you should be able to see `[main] INFO CoreNLP - StanfordCoreNLPServer listening at /0:0:0:0:0:0:0:0:9000` <br/>
 
-3. [numpy](https://numpy.org/install/)
-- numpy is a Python library which supports a large collection of high-level mathematical functions. It is used to perform simple average functions in this assignment.
-```
-pip install numpy
-```
+After this, `2. Extraction of indicative adjective phrase.ipynb` can be run. <br/>
 
-4. [requests](https://docs.python-requests.org/en/latest/user/install//)
-- requests is a simple, yet elegant, HTTP library. It is used to read posts' text from URLs in this assignment.
-```
-pip install requests
-```
 
-5. [docx2text](https://pypi.org/project/docx2txt/#history)
-- docx2text is a pure python-based utility to extract text and images from docx files. It used to read text from URLs with web scraping blocked (CNA posts) from a word document in this assignment. 
-```
-pip install docx2text
-```
 
-6. [language_tool_python](https://pypi.org/project/language-tool-python/)
-- language_tool_python checks grammar using LanguageTool. It is used to perform grammar checks on the text in this assignment.
-```
-pip install language-tool-python
-```
-
-7. CNA Post Documents
-- 2 Word Documents (cnaOne and cnaTwo) contain the posts from 2 URLs from CNA. Web scraping had been blocked for CNA which resulted manually storing the posts in word documents to be read from the program during execution. 
-
+## Python dependencies
+1. VADER
+2. [Natural Language Toolkit](https://www.nltk.org/install.html)
+3. [spaCy](https://spacy.io/usage)
+4. [pandas](https://pandas.pydata.org/docs/getting_started/install.html)
+5. [Natural Language Toolkit](https://www.nltk.org/install.html)
+6. [BeautifulSoup](https://www.crummy.com/software/BeautifulSoup/bs4/doc/#installing-beautiful-soup)
+7. [numpy](https://numpy.org/install/)
+8. [requests](https://docs.python-requests.org/en/latest/user/)
+9. [docx2text](https://pypi.org/project/docx2txt/#history)
+10. [language_tool_python](https://pypi.org/project/language-tool-python/)
+11. CNA Post Documents
 
 ### Results 
 #### 3.4 Application 
