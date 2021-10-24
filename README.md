@@ -30,7 +30,7 @@ After this, `2. Extraction of indicative adjective phrase.ipynb` can be run. <br
 
 ## Results for 3.4 Application
 
-![Model Results]('model_results.jpg)
+![Model Results](model_results.jpg)
 
 
 
