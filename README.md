@@ -32,7 +32,7 @@ pip install spacy
 python -m spacy download en_core_web_sm
 ```
 
-2. [pandas](https://pandas.pydata.org/docs/getting_started/install.html)
+3. [pandas](https://pandas.pydata.org/docs/getting_started/install.html)
 - pandas is a Python package that provides fast, flexible, and expressive data structures, used in this assignment to display the results obtained.
 ```
 pip install pandas
