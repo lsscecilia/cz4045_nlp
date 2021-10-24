@@ -28,7 +28,19 @@ With this, the server should be started and you should be able to see `[main] IN
 
 After this, `2. Extraction of indicative adjective phrase.ipynb` can be run. <br/>
 
+## Results for 3.4 Application
 
+**Input text: "I ordered this chair last week. The condition was really good. The support is comfortable for the back and the seat is strong"**
+
+LIME output:
+![Positive Prediction](pos_pred.png)
+
+**Input text: "Never again! The service was so slow and the food was not good."**
+
+LIME output:
+![Negative Prediction](neg_pred.png)
+
+Using the LIME tool we are able to identify the probability of contribution to a specific label for every token in the text. From the 2 sample predictions above we can see that the model is more confident in making positive predictions as the dataset is biased towards positive reviews. Although words like 'Never' or 'Not' are used one positive word 'good' contributes highly towards the final prediction of the negative review.
 
 ## Python dependencies
 1. VADER
@@ -43,19 +55,6 @@ After this, `2. Extraction of indicative adjective phrase.ipynb` can be run. <br
 10. [language_tool_python](https://pypi.org/project/language-tool-python/)
 11. CNA Post Documents
 
-### Results 
-#### 3.4 Application 
 
-**Input text: "I ordered this chair last week. The condition was really good. The support is comfortable for the back and the seat is strong"**
-
-LIME output:
-![Positive Prediction](pos_pred.png)
-
-**Input text: "Never again! The service was so slow and the food was not good."**
-
-LIME output:
-![Negative Prediction](neg_pred.png)
-
-Using the LIME tool we are able to identify the probability of contribution to a specific label for every token in the text. From the 2 sample predictions above we can see that the model is more confident in making positive predictions as the dataset is biased towards positive reviews. Although words like 'Never' or 'Not' are used one positive word 'good' contributes highly towards the final prediction of the negative review. 
 
 
