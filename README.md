@@ -1,4 +1,8 @@
 # CZ4045 Natural Language Processing - Assignment 1
+## Assignment
+Requirements of this assignment can be found [here](https://github.com/lsscecilia/cz4045_nlp/blob/main/question.pdf) </br> </br>
+Report for this assignment can be found [here](https://github.com/lsscecilia/cz4045_nlp/blob/main/CZ4045_Assignment_1_Group_33_Submission/CZ4045_Assignment_1_Report.pdf)
+
 ## Files
 Files are labelled according to the portion in the Report.
 
